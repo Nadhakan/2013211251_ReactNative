@@ -6,7 +6,7 @@ const information = () => {
     <View style={styles.container}>
       <Text style={styles.text}>Thai-nichi</Text>
       <Text style={styles.text}>By....Nadhakan Howteeragul</Text>
-      <Text style={styles.text}>Student ID: 2013211251</Text>
+      <Text style={[styles.text,styles.warning]}>Student ID: 2013211251</Text>
       <Text style={styles.text}>Major : Multimedia Technology</Text>
     </View>
   );
@@ -24,4 +24,7 @@ const styles = StyleSheet.create({
   text: {
     color: "white", fontSize:32
   },
+  warning:{
+    fontWeight:"bold", color:"black"
+  }
 });
