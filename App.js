@@ -5,6 +5,9 @@ import Welcome from "./components/Welcome";
 import Practice1 from "./components/Practice1";
 import Txtinput from "./components/Txtinput";
 import CustomComponent from "./components/CustomComponent";
+import Logo from "./components/Logo";
+import LotsOfGreeting from "./components/LotsOfGreeting";
+import Practice2 from "./components/Practice2";
 
 const App = () => {
   return (
@@ -13,7 +16,10 @@ const App = () => {
       {/* <Welcome/> */}
       {/* <Practice1/> */}
       {/* <Txtinput/> */}
-      <CustomComponent/>
+      {/* <CustomComponent/> */}
+      {/* <Logo/> */}
+      {/* <LotsOfGreeting/> */}
+      <Practice2/>
     </View>
   );
 };
