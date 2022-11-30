@@ -8,6 +8,9 @@ import CustomComponent from "./components/CustomComponent";
 import Logo from "./components/Logo";
 import LotsOfGreeting from "./components/LotsOfGreeting";
 import Practice2 from "./components/Practice2";
+import Count from "./components/Count";
+import Textinput1 from "./components/Textinput1";
+import Practice3 from "./components/Practice3";
 
 const App = () => {
   return (
@@ -19,9 +22,18 @@ const App = () => {
       {/* <CustomComponent/> */}
       {/* <Logo/> */}
       {/* <LotsOfGreeting/> */}
-      <Practice2/>
+      {/* <Practice2/> */}
+      {/* <Count num={2} title='click'/> */}
+      {/* <Textinput1/> */}
+      <Practice3/>
     </View>
   );
 };
+
+const styles = StyleSheet.create(
+  {
+      container:{flex:1 , justifyContent:'center', alignItems:'center'}
+  }
+)
 
 export default App;
