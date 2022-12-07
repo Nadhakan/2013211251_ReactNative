@@ -11,6 +11,11 @@ import Practice2 from "./components/Practice2";
 import Count from "./components/Count";
 import Textinput1 from "./components/Textinput1";
 import Practice3 from "./components/Practice3";
+import AlertExample from "./components/AlertExample";
+import ImageWithTextinput from "./components/ImageWithTextinput";
+import ButtonExample from "./components/ButtonExample";
+import Touchable_Example from "./components/Touchable_Example";
+import TouchablePractice from "./components/TouchablePractice";
 
 const App = () => {
   return (
@@ -25,15 +30,22 @@ const App = () => {
       {/* <Practice2/> */}
       {/* <Count num={2} title='click'/> */}
       {/* <Textinput1/> */}
-      <Practice3/>
+      {/* <Practice3/> */}
+      {/* <AlertExample /> */}
+      {/* <ImageWithTextinput/> */}
+      {/* <ButtonExample/> */}
+      {/* <Touchable_Example/> */}
+      <TouchablePractice/>
     </View>
   );
 };
 
-const styles = StyleSheet.create(
-  {
-      container:{flex:1 , justifyContent:'center', alignItems:'center'}
-  }
-)
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+});
 
 export default App;
