@@ -1,51 +1,46 @@
-import { StyleSheet, Text, View } from "react-native";
-import React from "react";
-import Information from "./components/Information";
-import Welcome from "./components/Welcome";
-import Practice1 from "./components/Practice1";
-import Txtinput from "./components/Txtinput";
-import CustomComponent from "./components/CustomComponent";
-import Logo from "./components/Logo";
-import LotsOfGreeting from "./components/LotsOfGreeting";
-import Practice2 from "./components/Practice2";
-import Count from "./components/Count";
-import Textinput1 from "./components/Textinput1";
-import Practice3 from "./components/Practice3";
-import AlertExample from "./components/AlertExample";
-import ImageWithTextinput from "./components/ImageWithTextinput";
-import ButtonExample from "./components/ButtonExample";
-import Touchable_Example from "./components/Touchable_Example";
-import TouchablePractice from "./components/TouchablePractice";
+import { View, Text, Button} from 'react-native'
+import React from 'react'
+import { NavigationContainer } from '@react-navigation/native'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import Homescreens from './screens/homescreens'
+import Aboutscreens from './screens/Aboutscreens'
+import HomePost from './screens/HomePost'
+import CreatePost from './screens/CreatePost'
+import FirstPage from './screens/FirstPage'
+import SecondPage from './screens/SecondPage'
+
+
+// function HomeSceen({navigation}){
+//     return(
+//         <View style={{flex:1, alignItems:'center', justifyContent:'center'}}>
+//             <Text>HomeSceen</Text>
+//             <Button title='เกี่ยวกับเรา' onPress={()=> navigation.navigate('about')}/>
+//         </View>
+//     )
+// }
+
+// function AboutSceen(){
+//     return(
+//         <View style={{flex:1, alignItems:'center', justifyContent:'center'}}>
+//             <Text>AboutSceen</Text>
+//         </View>
+//     )
+// }
+
+const Stack = createNativeStackNavigator();
 
 const App = () => {
   return (
-    <View>
-      {/* <Information/> */}
-      {/* <Welcome/> */}
-      {/* <Practice1/> */}
-      {/* <Txtinput/> */}
-      {/* <CustomComponent/> */}
-      {/* <Logo/> */}
-      {/* <LotsOfGreeting/> */}
-      {/* <Practice2/> */}
-      {/* <Count num={2} title='click'/> */}
-      {/* <Textinput1/> */}
-      {/* <Practice3/> */}
-      {/* <AlertExample /> */}
-      {/* <ImageWithTextinput/> */}
-      {/* <ButtonExample/> */}
-      {/* <Touchable_Example/> */}
-      <TouchablePractice/>
-    </View>
-  );
-};
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-});
-
+    <NavigationContainer>
+        <Stack.Navigator initialRouteName='Home' screenOptions={{headerStyle:{backgroundColor:'#8b0000'},headerTintColor:'#ffff',headerTitleStyle:{fontWeight:'bold'}}}>
+            {/* <Stack.Screen name="Home" component={Homescreens}/> */}
+            {/* <Stack.Screen name="About" component={Aboutscreens}/> */}
+            {/* <Stack.Screen name="HomePost" component={HomePost}/> */}
+            {/* <Stack.Screen name="CreatePost" component={CreatePost}/> */}
+            <Stack.Screen name="First Page" component={FirstPage}/>
+            <Stack.Screen name="Second Page" component={SecondPage}/>
+        </Stack.Navigator>
+    </NavigationContainer>
+  )
+}
 export default App;
