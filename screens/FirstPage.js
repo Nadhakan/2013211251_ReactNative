@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     fontSize: 16,
     marginVertical: 10,
-    },
+    }
     });
 
 export default FirstPage

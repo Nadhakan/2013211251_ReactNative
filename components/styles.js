@@ -1,8 +1,8 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet} from "react-native";
 
 const styles = StyleSheet.create({
     container:{
-        flex:1, justifyContent:'center', alignItems:'center',backgroundColor:"#c10d31"
+        flex:1, justifyContent:'center', alignItems:'center'
     },
     title:{
         fontSize:32, color:"white", fontWeight:"bold"
@@ -11,7 +11,13 @@ const styles = StyleSheet.create({
         color:"black"
     },
     normaltext:{
-        fontSize:"24", color:"white"
+        fontSize:24, color:"white"
+    },
+    textTopStyle:{
+        fontSize:25, textAlign:'center', marginBottom:16
+    },
+    textBottomStyle:{
+        fontSize:16, textAlign:'center', color:'grey'
     }
 
 });

@@ -8,6 +8,9 @@ import HomePost from './screens/HomePost'
 import CreatePost from './screens/CreatePost'
 import FirstPage from './screens/FirstPage'
 import SecondPage from './screens/SecondPage'
+import FPage from './pages/FPage'
+import SPage from './pages/SPage'
+import TPage from './pages/TPage'
 
 
 // function HomeSceen({navigation}){
@@ -37,8 +40,11 @@ const App = () => {
             {/* <Stack.Screen name="About" component={Aboutscreens}/> */}
             {/* <Stack.Screen name="HomePost" component={HomePost}/> */}
             {/* <Stack.Screen name="CreatePost" component={CreatePost}/> */}
-            <Stack.Screen name="First Page" component={FirstPage}/>
-            <Stack.Screen name="Second Page" component={SecondPage}/>
+            {/* <Stack.Screen name="First Page" component={FirstPage}/> */}
+            {/* <Stack.Screen name="Second Page" component={SecondPage}/> */}
+            <Stack.Screen name="FPage" component={FPage}/>
+            <Stack.Screen name="SPage" component={SPage}/>
+            <Stack.Screen name="TPage" component={TPage}/>
         </Stack.Navigator>
     </NavigationContainer>
   )
