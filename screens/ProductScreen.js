@@ -75,7 +75,7 @@ const ProductScreen = ({ navigation }) => {
   const _renderItem = ({ item }) => {
     return (
       <SafeAreaView>
-        <TouchableOpacity style ={styles.addButtonStyle} onPress ={()=>{navigation.navigate('Detail')}}>
+        <TouchableOpacity style ={styles.addButtonStyle} onPress ={()=>{navigation.navigate('Detail', {id : item.id, title : item.title})}}>
           <View style={{ flex: 1 }}>
             <View style={{ flex: 1, flexDirection: "row", margin: 5 }}>
               <Image
